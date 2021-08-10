@@ -80,3 +80,68 @@ h1 {
     transform-origin: 50% 100%;
     transform: perspective(200px);
 }
+
+.time-elem .top::after, .time-elem .bottom-back::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.bottom {
+    z-index: 1;
+}
+
+.bottom::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: hsl(235, 20%, 25%);
+}
+
+.bottom-back {
+    z-index: 2;
+    top: 0;
+    height: 50%;
+    overflow: hidden;
+    background-color: hsl(235, 20%, 25%);
+}
+
+.bottom-back span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.top, .top-back {
+    height: 50%;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.top-back {
+    z-index: 4;
+    bottom: 0;
+    transform-origin: 50% 0;
+    background-color: hsl(235, 20%, 25%);
+    transform: perspective(200px) rotateX(180deg);
+}
+
+.top-back span {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
