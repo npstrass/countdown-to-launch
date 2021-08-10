@@ -51,7 +51,6 @@ h1 {
   position: relative;
   margin-right: 20px;
   color: #fb6087;
-  position: relative;
   height: 80px;
   width: 100px;
   background-color: #33354d;
@@ -166,5 +165,32 @@ h1 {
 .time-elem {
   -webkit-box-shadow: 0px 8px 0px #0d0d12;
           box-shadow: 0px 8px 0px #0d0d12;
+}
+
+.socials {
+  position: absolute;
+  bottom: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 160px;
+}
+
+.socials img {
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.socials img:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 /*# sourceMappingURL=main.css.map */

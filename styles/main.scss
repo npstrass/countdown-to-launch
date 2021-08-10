@@ -39,7 +39,6 @@ h1 {
     position: relative;
     margin-right: 20px;
     color: hsl(345, 95%, 68%);
-    position: relative;
     height: 80px;
     width: 100px;
     background-color: hsl(235, 20%, 25%);
@@ -148,4 +147,23 @@ h1 {
 
 .time-elem {
     box-shadow: 0px 8px 0px hsl(240, 17%, 6%);
+}
+
+.socials {
+    position: absolute;
+    bottom: 25%;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.socials img {
+    filter: brightness(.75);
+    transition: 200ms;
+}
+
+.socials img:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+    transform: translateY(-10%);
 }
