@@ -72,7 +72,7 @@ function animateFlip(element, value) {
     })
 
     gsap.to(element.querySelector('.top-back'), 0.7, {
-        rotation: '0',
+        rotationX: '0',
         transformPerspective: 300,
         ease: Quart.easeOut,
         clearProps: 'all'
