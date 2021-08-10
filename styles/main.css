@@ -81,7 +81,7 @@ h1 {
 }
 
 .time-elem > span {
-  posiiton: absolute;
+  position: absolute;
   left: 0;
   right: 0;
 }
