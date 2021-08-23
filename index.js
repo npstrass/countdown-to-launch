@@ -13,7 +13,7 @@ let timeLeft = {
 let totalSeconds
 
 function init() {
-    totalSeconds = Math.floor((new Date('08/19/2021') - new Date()) / 1000)
+    totalSeconds = Math.floor((new Date('10/10/2021') - new Date()) / 1000)
     setTimeLeft()
     let interval = setInterval(() => {
         if (totalSeconds < 0) {
